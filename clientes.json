@@ -1,0 +1,344 @@
+{
+  "clientes": [
+    {
+      "nome": "Carlos Manuel",
+      "empresa": "AGT",
+      "morada": "Luanda - Maianga",
+      "telefone": "923456789",
+      "matricula": "LD-23-45-AA",
+      "email": "carlos@agt.co.ao",
+      "data_inicio": "18/03/2026",
+      "data_fim": "18/03/2026",
+      "parque": "Parque Terrio"
+    },
+    {
+      "nome": "Ana Paula",
+      "empresa": "SONANGOL",
+      "morada": "Luanda - Talatona",
+      "telefone": "924567890",
+      "matricula": "LD-34-56-BB",
+      "email": "ana@sonangol.co.ao",
+      "data_inicio": "05/06/2021",
+      "data_fim": "05/06/2026",
+      "parque": "Parque cave"
+    },
+    {
+      "nome": "João Pedro",
+      "empresa": "Banco BIC",
+      "morada": "Luanda - Ingombota",
+      "telefone": "925678901",
+      "matricula": "LD-45-67-CC",
+      "email": "joao@bic.ao",
+      "data_inicio": "10/01/2022",
+      "data_fim": "10/07/2026",
+      "parque": "Cip domestico"
+    },
+    {
+      "nome": "Maria José",
+      "empresa": "UNITEL",
+      "morada": "Luanda - Kilamba",
+      "telefone": "926789012",
+      "matricula": "LD-56-78-DD",
+      "email": "maria@unitel.ao",
+      "data_inicio": "12/02/2020",
+      "data_fim": "12/02/2021",
+      "parque": "Cip internacional"
+    },
+    {
+      "nome": "Pedro António",
+      "empresa": "ENDE",
+      "morada": "Luanda - Cacuaco",
+      "telefone": "927890123",
+      "matricula": "LD-67-89-EE",
+      "email": "pedro@ende.co.ao",
+      "data_inicio": "22/07/2021",
+      "data_fim": "22/07/2026",
+      "parque": "Taxi"
+    },
+    {
+      "nome": "Luisa Fernandes",
+      "empresa": "TAAG",
+      "morada": "Luanda - Viana",
+      "telefone": "928901234",
+      "matricula": "LD-78-90-FF",
+      "email": "luisa@taag.ao",
+      "data_inicio": "01/09/2020",
+      "data_fim": "01/09/2026",
+      "parque": "Autocarros"
+    },
+    {
+      "nome": "José Silva",
+      "empresa": "Movicel",
+      "morada": "Luanda - Samba",
+      "telefone": "929012345",
+      "matricula": "LD-89-01-GG",
+      "email": "jose@movicel.ao",
+      "data_inicio": "11/11/2022",
+      "data_fim": "11/11/2023",
+      "parque": "Parque Terrio"
+    },
+    {
+      "nome": "Helena Costa",
+      "empresa": "Zap",
+      "morada": "Luanda - Benfica",
+      "telefone": "930123456",
+      "matricula": "LD-90-12-HH",
+      "email": "helena@zap.co.ao",
+      "data_inicio": "03/03/2021",
+      "data_fim": "03/03/2022",
+      "parque": "Parque cave"
+    },
+
+    {
+      "nome": "Rui Gomes",
+      "empresa": "Standard Bank",
+      "morada": "Luanda - Mutamba",
+      "telefone": "931234567",
+      "matricula": "LD-11-22-II",
+      "email": "rui@standardbank.co.ao",
+      "data_inicio": "15/05/2020",
+      "data_fim": "15/05/2021",
+      "parque": "Taxi"
+    },
+    {
+      "nome": "Sandra Pinto",
+      "empresa": "Angola Telecom",
+      "morada": "Luanda - Rangel",
+      "telefone": "932345678",
+      "matricula": "LD-22-33-JJ",
+      "email": "sandra@telecom.ao",
+      "data_inicio": "20/08/2021",
+      "data_fim": "20/08/2026",
+      "parque": "Autocarros"
+    },
+
+    {
+      "nome": "Miguel Dias",
+      "empresa": "BAI",
+      "morada": "Luanda - Golfe",
+      "telefone": "933456789",
+      "matricula": "LD-33-44-KK",
+      "email": "miguel@bai.ao",
+      "data_inicio": "17/04/2022",
+      "data_fim": "17/04/2026",
+      "parque": "Parque Terrio"
+    },
+    {
+      "nome": "Teresa Lopes",
+      "empresa": "ENSa",
+      "morada": "Luanda - Rocha Pinto",
+      "telefone": "934567890",
+      "matricula": "LD-44-55-LL",
+      "email": "teresa@ensa.co.ao",
+      "data_inicio": "25/12/2020",
+      "data_fim": "25/12/2026",
+      "parque": "Parque cave"
+    },
+
+    {
+      "nome": "António Ribeiro",
+      "empresa": "Cuca",
+      "morada": "Luanda - Cazenga",
+      "telefone": "935678901",
+      "matricula": "LD-55-66-MM",
+      "email": "antonio@cuca.ao",
+      "data_inicio": "02/02/2021",
+      "data_fim": "02/02/2022",
+      "parque": "Cip domestico"
+    },
+    {
+      "nome": "Paula Mendes",
+      "empresa": "Refriango",
+      "morada": "Luanda - Viana",
+      "telefone": "936789012",
+      "matricula": "LD-66-77-NN",
+      "email": "paula@refriango.ao",
+      "data_inicio": "30/06/2022",
+      "data_fim": "30/06/2026",
+      "parque": "Cip internacional"
+    },
+
+    {
+      "nome": "Victor Hugo",
+      "empresa": "Total Angola",
+      "morada": "Luanda - Talatona",
+      "telefone": "937890123",
+      "matricula": "LD-77-88-OO",
+      "email": "victor@total.ao",
+      "data_inicio": "19/09/2020",
+      "data_fim": "19/09/2026",
+      "parque": "Taxi"
+    },
+    {
+      "nome": "Carla Dias",
+      "empresa": "Chevron",
+      "morada": "Luanda - Ingombota",
+      "telefone": "938901234",
+      "matricula": "LD-88-99-PP",
+      "email": "carla@chevron.ao",
+      "data_inicio": "07/07/2021",
+      "data_fim": "07/07/2026",
+      "parque": "Autocarros"
+    },
+
+    {
+      "nome": "Daniel Rocha",
+      "empresa": "Shoprite Angola",
+      "morada": "Luanda - Kilamba",
+      "telefone": "939012345",
+      "matricula": "LD-99-00-QQ",
+      "email": "daniel@shoprite.co.ao",
+      "data_inicio": "14/01/2022",
+      "data_fim": "14/01/2023",
+      "parque": "Parque Terrio"
+    },
+    {
+      "nome": "Patricia Alves",
+      "empresa": "Kero",
+      "morada": "Luanda - Benfica",
+      "telefone": "940123456",
+      "matricula": "LD-10-11-RR",
+      "email": "patricia@kero.co.ao",
+      "data_inicio": "09/10/2020",
+      "data_fim": "09/10/2026",
+      "parque": "Parque cave"
+    },
+
+    {
+      "nome": "Nelson Cruz",
+      "empresa": "Intermarket",
+      "morada": "Luanda - Viana",
+      "telefone": "941234567",
+      "matricula": "LD-12-13-SS",
+      "email": "nelson@intermarket.ao",
+      "data_inicio": "21/03/2021",
+      "data_fim": "21/03/2026",
+      "parque": "Taxi"
+    },
+    {
+      "nome": "Marta Silva",
+      "empresa": "Candando",
+      "morada": "Luanda - Talatona",
+      "telefone": "942345678",
+      "matricula": "LD-14-15-TT",
+      "email": "marta@candando.co.ao",
+      "data_inicio": "18/08/2022",
+      "data_fim": "18/08/2026",
+      "parque": "Autocarros"
+    },
+
+    {
+      "nome": "Filipe Santos",
+      "empresa": "Banco Sol",
+      "morada": "Luanda - Mutamba",
+      "telefone": "943456789",
+      "matricula": "LD-16-17-UU",
+      "email": "filipe@bancosol.ao",
+      "data_inicio": "11/11/2021",
+      "data_fim": "11/11/2026",
+      "parque": "Parque Terrio"
+    },
+    
+    {
+      "nome": "Inês Gomes",
+      "empresa": "BFA",
+      "morada": "Luanda - Maianga",
+      "telefone": "944567890",
+      "matricula": "LD-18-19-VV",
+      "email": "ines@bfa.ao",
+      "data_inicio": "05/05/2020",
+      "data_fim": "05/05/2026",
+      "parque": "Parque cave"
+    },
+
+    {
+      "nome": "Edgar Martins",
+      "empresa": "Nova Cimangola",
+      "morada": "Luanda - Cacuaco",
+      "telefone": "945678901",
+      "matricula": "LD-20-21-WW",
+      "email": "edgar@cimangola.ao",
+      "data_inicio": "27/02/2021",
+      "data_fim": "27/02/2026",
+      "parque": "Cip domestico"
+    },
+    {
+      "nome": "Diana Costa",
+      "empresa": "Angola Cables",
+      "morada": "Luanda - Samba",
+      "telefone": "946789012",
+      "matricula": "LD-22-23-XX",
+      "email": "diana@cables.ao",
+      "data_inicio": "13/06/2022",
+      "data_fim": "13/06/2026",
+      "parque": "Cip internacional"
+    },
+
+    {
+      "nome": "Bruno Lopes",
+      "empresa": "Porto de Luanda",
+      "morada": "Luanda - Ingombota",
+      "telefone": "947890123",
+      "matricula": "LD-24-25-YY",
+      "email": "bruno@portoluanda.ao",
+      "data_inicio": "08/03/2020",
+      "data_fim": "08/03/2026",
+      "parque": "Taxi"
+    },
+    {
+      "nome": "Sofia Mendes",
+      "empresa": "EPAL",
+      "morada": "Luanda - Rangel",
+      "telefone": "948901234",
+      "matricula": "LD-26-27-ZZ",
+      "email": "sofia@epal.ao",
+      "data_inicio": "30/09/2021",
+      "data_fim": "30/09/2026",
+      "parque": "Autocarros"
+    },
+    {
+    "nome": "Ricardo Mateus",
+    "empresa": "AGT",
+    "morada": "Luanda - Kilamba Kiaxi",
+    "telefone": "949112233",
+    "matricula": "LD-30-31-AA",
+    "email": "ricardo@agt.co.ao",
+    "data_inicio": "18/03/2023",
+    "data_fim": "18/03/2026",
+    "parque": "Parque Terrio"
+  },
+  {
+    "nome": "Elisa Domingos",
+    "empresa": "SONANGOL",
+    "morada": "Luanda - Talatona",
+    "telefone": "949223344",
+    "matricula": "LD-32-33-BB",
+    "email": "elisa@sonangol.co.ao",
+    "data_inicio": "01/01/2024",
+    "data_fim": "18/03/2026",
+    "parque": "Parque cave"
+  },
+  {
+    "nome": "Mateus Fernandes",
+    "empresa": "Banco BIC",
+    "morada": "Luanda - Benfica",
+    "telefone": "949334455",
+    "matricula": "LD-34-35-CC",
+    "email": "mateus@bic.ao",
+    "data_inicio": "10/07/2022",
+    "data_fim": "20/03/2026",
+    "parque": "Taxi"
+  },
+  {
+    "nome": "Juliana Pinto",
+    "empresa": "UNITEL",
+    "morada": "Luanda - Viana",
+    "telefone": "949445566",
+    "matricula": "LD-36-37-DD",
+    "email": "juliana@unitel.ao",
+    "data_inicio": "05/05/2021",
+    "data_fim": "15/03/2026",
+    "parque": "Autocarros"
+  }
+  ]
+}

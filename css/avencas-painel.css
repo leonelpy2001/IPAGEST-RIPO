@@ -1,0 +1,581 @@
+/* Elemento principal */
+body{
+    height: 100vh;
+}
+
+main {
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+}
+
+.hide {
+    display: none;
+}
+
+/* estilizando side bar */
+main section.side-bar {
+    border-right: 1px solid rgba(0, 0, 0, 0.148);
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+main section.side-bar ul {
+    position: sticky;
+    top: 25px;
+
+}
+
+main section.side-bar ul li {
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+
+
+}
+main section.side-bar ul li a {
+text-decoration: none;
+
+
+}
+
+main section.side-bar ul li.li-painel {
+
+    margin-bottom: 65px;
+
+}
+
+main section.side-bar ul li.li-painel #grid {
+    font-size: 30px;
+}
+
+main section.side-bar ul li.li-painel span {
+    font-weight: 600;
+}
+
+main section.side-bar ul li.li-painel .i-rolo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 18px;
+    color: rgb(91, 208, 91);
+
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 65px;
+    background-color: rgb(18, 18, 18);
+}
+
+main section.side-bar ul li.li-estacionamento {
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+main section.side-bar ul li.li-estacionamento .li-titulo-estacionamento {
+    margin-bottom: 15px;
+
+}
+
+main section.side-bar ul li.li-estacionamento .i-rolo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 18px;
+
+
+    gap: 15px;
+    list-style: none;
+    margin-top: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+main section.side-bar ul li.li-estacionamento .i-rolo span {
+    font-weight: 600;
+
+}
+
+main section.side-bar ul li.li-estacionamento .i-rolo i {
+    font-size: 30px;
+
+}
+
+main section.side-bar ul li.li-conta {
+    opacity: 0.7;
+
+}
+
+
+
+main section.side-bar ul li.li-conta li {
+    margin-bottom: 15px;
+
+}
+
+main section.side-bar ul li.li-conta .i-rolo {
+    display: flex;
+    align-items: center;
+
+    border-radius: 12px;
+    padding: 18px;
+
+
+    gap: 15px;
+    list-style: none;
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.146);
+}
+
+main section.side-bar ul li.li-conta .i-rolo i {
+    font-size: 30px;
+
+}
+
+
+
+main section.section-main {
+    padding: 25px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+
+
+main section.section-main .div-header {
+    padding: 15px;
+    position: sticky;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.27);
+    display: flex;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.527);
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+
+main section.section-main .div-header .logo {
+    width: 50px;
+    opacity: 0.6;
+    display: block;
+
+}
+
+main section.section-main .div-header .titulo-conta {
+    font-weight: 600;
+    font-size: large;
+    opacity: 0.6;
+    margin-right: 65px;
+
+}
+
+main section.section-main .div-header i {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+main section.section-main .div-header .div-notificacoes {
+    position: relative;
+}
+
+main section.section-main .div-header .div-notificacoes .notificacoes {
+    border-radius: 15px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.204);
+    width: 350px;
+
+    padding: 15px;
+}
+
+main section.section-main .div-header .div-notificacoes .notificacoes p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.257);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+main section.section-main .div-header .div-notificacoes .notificacoes img {
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+    width: 150px;
+}
+
+/**************************/
+
+main section.section-main .ul-cartoes {
+    margin-top: 40px;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main section.section-main .ul-cartoes li {
+    border-radius: 30px;
+    padding: 20px;
+
+    list-style: none;
+}
+
+
+main section.section-main .ul-cartoes li img {
+    width: 35px;
+}
+
+main section.section-main .ul-cartoes li.li-contratos {
+    color: white;
+
+    background-color: black;
+}
+
+
+
+main section.section-main .ul-cartoes li.li-contratos .div-contratos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+main section.section-main .ul-cartoes li.li-contratos .div-contratos span {
+    opacity: 0.6;
+}
+
+main section.section-main .ul-cartoes li.li-contratos p {
+    font-size: 55px;
+    line-height: 80px;
+    color: rgb(91, 208, 91);
+    font-weight: 600;
+}
+
+
+
+main section.section-main .ul-cartoes li.li-avencas-ativas {
+    background-color: rgb(239, 239, 239);
+
+}
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-avencas-ativas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+
+}
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-avencas-ativas span {
+    opacity: 0.6;
+
+}
+
+
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-rolo-main-avencas-ativas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-rolo-main-avencas-ativas img {
+    width: 52px;
+    cursor: pointer;
+}
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-rolo-main-avencas-ativas .rolo-avencas-ativas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-rolo-main-avencas-ativas p {
+    font-size: 55px;
+    line-height: 80px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+main section.section-main .ul-cartoes li.li-avencas-ativas .div-rolo-main-avencas-ativas span {
+    opacity: 0.6;
+    position: absolute;
+    right: -50px;
+    bottom: 15px;
+    font-size: 20px;
+}
+
+/*************************************************/
+main section.section-main .ul-cartoes .li-avencas-expiradas {
+    border-left: 1px solid rgba(0, 0, 0, 0.282);
+    border-radius: unset;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-avencas-expiradas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-avencas-expiradas span {
+    opacity: 0.6;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-rolo-main-avencas-expiradas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-rolo-main-avencas-expiradas img {
+    width: 52px;
+    cursor: pointer;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-rolo-main-avencas-expiradas .rolo-avencas-expiradas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-rolo-main-avencas-expiradas .rolo-avencas-expiradas p {
+    font-size: 55px;
+    line-height: 80px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+main section.section-main .ul-cartoes .li-avencas-expiradas .div-rolo-main-avencas-expiradas .rolo-avencas-expiradas span {
+    opacity: 0.6;
+    position: absolute;
+    right: -50px;
+    bottom: 15px;
+    font-size: 20px;
+}
+
+
+/********/
+
+main section.section-main .div-banner-relatorio {
+    border-radius: 20px;
+
+    margin-top: 50px;
+    background-color: rgb(128, 228, 143);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+main section.section-main .div-banner-relatorio button {
+    padding: 0 80px;
+    background-color: black;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    color: white;
+
+}
+
+main section.section-main .div-banner-relatorio button:hover {
+    color: black;
+    transition: 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.415);
+    background-color: transparent;
+
+}
+
+
+main section.section-main .div-banner-relatorio .banner-rolo {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+main section.section-main .div-banner-relatorio .banner-rolo img {
+    display: block;
+    width: 60px;
+    opacity: 0.6;
+
+}
+
+main section.section-main .div-banner-relatorio .banner-rolo p {
+    width: 340px;
+
+}
+
+/*********/
+
+.div-grafico {
+    margin-top: 25px;
+
+
+}
+
+.div-grafico canvas {
+
+
+    width: 100%;
+    max-width: 100%;
+}
+
+/*********/
+
+.modal-avencas {
+
+    box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.093);
+    border-radius: 20px;
+    width: 420px;
+    outline: none;
+    border: none;
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-avencas article {
+
+    padding: 35px;
+
+}
+
+
+.modal-avencas article .div-icone {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.modal-avencas article .div-icone i {
+    font-size: 50px;
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+
+}
+
+.modal-avencas article .div-icone .div-valores-perc {
+
+    display: flex;
+    gap: 15px;
+}
+
+.modal-avencas article .div-icone .div-rolo-span {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-avencas article .div-icone .div-rolo-span .div-circulo {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(127, 221, 127);
+}
+
+
+.modal-avencas article .div-valores-perc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+
+
+}
+
+.modal-avencas article .div-valores-perc p {
+
+    font-size: 75px;
+    font-weight: 600;
+
+}
+
+.modal-avencas article .div-parques {
+
+    font-size: 15px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 10px 2px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.337);
+}
+
+
+
+.modal-avencas article .lista-parques {
+    opacity: 0.6;
+}
+
+.modal-avencas article .lista-parques li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.sair-da-conta {
+   
+    padding: 20px;
+    box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.093);
+    border-radius: 20px;
+    width: 420px;
+    outline: none;
+    border: none;
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sair-da-conta p {
+   opacity: 0.6;
+   text-align: center;
+}
+
+
+.sair-da-conta .div-btns {
+    margin-top: 60px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+.sair-da-conta .div-btns button {
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.sair-da-conta .div-btns button.sim-sair {
+    background-color: red;
+    color: white;
+}
+
+.sair-da-conta .div-btns button.sim-sair {
+    background-color: red;
+    color: white;
+}

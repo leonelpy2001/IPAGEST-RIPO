@@ -1,0 +1,244 @@
+.div-componentes-btn {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.095);
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 0 0 20px 10px rgba(62, 62, 62, 0.080);
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+
+    animation-name: escalar;
+    animation-duration: 1s;
+
+}
+
+@keyframes escalar {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.ativoo {
+
+    background-color: rgb(18, 18, 18);
+    color: rgb(91, 208, 91);
+
+}
+
+.ativo-btn-parques {
+    border: 1px solid transparent !important;
+    background-color: rgb(237, 237, 237) !important;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.div-componentes-btn .rolo-btns {
+
+    display: flex;
+    gap: 15px;
+}
+
+.div-componentes-btn button {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.div-componentes-btn button.btn-exportar {
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+}
+
+.div-folha {
+    margin: 0 auto;
+    margin-top: 30px;
+
+    width: 210mm;
+    min-height: 297mm;
+
+    border: 1px solid rgba(0, 0, 0, 0.173);
+}
+
+.folha {
+
+
+
+
+
+    background: white;
+
+    width: 100%;
+
+    padding: 80px;
+
+}
+
+.folha img {
+    user-select: none;
+    display: block;
+    width: 180px;
+}
+
+
+.div-parques {
+    margin: auto;
+    margin-top: 40px;
+    animation-name: subir;
+    animation-duration: 1s;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+
+}
+
+@keyframes subir {
+    50% {
+        margin-top: 90px;
+    }
+}
+
+.hidden {
+    transition: 0.5s;
+    display: none;
+}
+
+
+
+.div-parques button {
+
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    display: flex;
+    gap: 8px;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 15px 30px;
+
+}
+
+p.testo-de-escolha {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.3;
+    margin-top: 50px;
+    border: 2px dashed;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.folha {
+    animation-name: subir;
+    animation-duration: 1.8s;
+}
+
+
+.folha .rotolo-conteudo {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.folha .rotolo-conteudo .div-rotolo-h-p {
+    width: 400px;
+    margin-bottom: 60px;
+}
+
+.folha .rotolo-conteudo .div-rotolo-h-p h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+
+}
+
+
+.folha .rotolo-conteudo .div-total-span {
+    position: relative;
+    bottom: 28px;
+}
+
+.folha .rotolo-conteudo .div-total-span .total {
+    font-size: 100px;
+    font-weight: 700;
+
+}
+
+.folha .div-diretorio-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-weight: 650;
+    font-size: 22px;
+}
+
+.folha .div-diretorio-data .diretorio {
+    width: 350px;
+}
+
+table,
+tr,
+.nao-quebrar {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.folha table {
+
+    border-spacing: 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.folha table th {
+    padding: 8px;
+
+
+}
+
+.folha table tbody {
+
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+
+}
+
+.folha table tbody td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+
+.folha table .total td {
+    text-align: start;
+    background-color: rgb(221, 221, 221);
+    font-weight: 700;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link da favico-->
+    <link rel="shortcut icon" href="../asets/imgs/logo/ipagest-icone.ico" type="image/x-icon">
+    <!--Link da configuracao global css -->
+    <link rel="stylesheet" href="../css/global-config.css">
+    <!--Link da configuracao dos icones -->
+    <link rel="stylesheet" href="../asets/webfonts/icones/boxicons.css">
+    <!--Link da configuracao da fonte -->
+    <link rel="stylesheet" href="../asets/webfonts/fonts/transfonter-open-sans/stylesheet.css">
+    <!--Link do index -->
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login Gestao de avenças</title>
+</head>
+
+<body>
+
+    <!--conteudo principal do login -->
+    <main>
+        <!--imagem svg do logo Ipagest  -->
+        <a href="../index.html"><img src="../asets/imgs/logo/ipagest-logo.svg" alt="Ipagest-logo" class="upagest-logo" draggable="false"></a>
+
+        <span class="div-aria-atual" draggable="false">
+            <img src="../asets/imgs/outros/git-merge.svg" alt="" draggable="false">
+            <span class="aria-nome">Gestao de Avenças</span>
+        </span>
+        <!--formulario -->
+        <form action="#">
+
+            <label for="nome">
+                <span>Nome do usuário</span>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <span class="alerta-nome" id="alerta"></span>
+            </label>
+
+            <label for="senha">
+                <span>Senha do usuário</span>
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <span class="alerta-senha" id="alerta"></span>
+            </label>
+
+            <hr>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

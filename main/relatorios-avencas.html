@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link da favico-->
+    <link rel="shortcut icon" href="../asets/imgs/logo/ipagest-icone.ico" type="image/x-icon">
+    <!--Link da configuracao global css -->
+    <link rel="stylesheet" href="../css/global-config.css">
+    <!--Link da configuracao dos icones -->
+    <link rel="stylesheet" href="../asets/webfonts/icones/boxicons.css">
+    <!--Link da configuracao da fonte -->
+    <link rel="stylesheet" href="../asets/webfonts/fonts/transfonter-open-sans/stylesheet.css">
+    <!--Link da  avencas-painel.css-->
+    <link rel="stylesheet" href="../css/avencas-painel.css">
+    <link rel="stylesheet" href="../css/relatorio-avencas.css">
+
+    <title>Avenças - Relatórios</title>
+</head>
+
+<body>
+
+    <main>
+        <dialog class="sair-da-conta">
+            <i class="bx-bx-alert"></i>
+            <p>Tem serteza que deseja sair da sua conta!</p>
+            <div class="div-btns">
+                <button class="sim-sair">Sim</button>
+                <button class="nao-sair">Nao</button>
+            </div>
+        </dialog>
+
+
+        <!--seccao da barra lateral-->
+        <section class="side-bar">
+            <ul class="ul-itens">
+                <li class="li-painel">
+
+                    <a href="../main/avencas-painel.html">
+                        <div class="i-rolo">
+                            <i class="bx bxs-grid" id="grid"></i> <span>Painel</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="li-estacionamento">
+                    <span class="li-titulo-estacionamento">Estacionamento</span>
+
+                    <div class="i-rolo">
+                        <i class="bx bx-clipboard-check"></i>
+                        <span>Gerir Avenças</span>
+                        <a href="../main/login-avenças.html"></a>
+                    </div>
+                </li>
+
+                <li class="li-conta">
+                    <span class="li-titulo-conta">Conta</span>
+                    <div class="i-rolo" id="btn-usuario">
+                        <i class="bx bx-user" id="icone-usuario"></i> <span class="usuario-nome"></span>
+                        <i class="bx-chevron-right "></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--seccao principal-->
+        <section class="section-main">
+            <article>
+                <div class="div-header">
+                    <img src="../asets/imgs/logo/ipagest-so-logo.svg" alt="app-logo" class="logo">
+                    <p class="titulo-conta">Avenças - Relatórios</p>
+                    <div class="div-notificacoes">
+                        <i class="bx-bell " id="btn-notificacoes"></i>
+                        <div class="notificacoes hide">
+                            <p>Ainda sem notificacoes!!!</p>
+                            <img src="../asets/imgs/outros/wired-outline-139-basket-hover-pinch.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="div-componentes-btn">
+
+                    <div class="rolo-btns">
+                        <button class="btn-geral ativoo" value="geral">Geral</button>
+                        <button class="btn-ativo" value="Ativo">Avenças ativas </button>
+                        <button class="btn-expirados" value="Expirado">Avenças expiradas</button>
+                    </div>
+
+                    <button class="btn-exportar">Exportar</button>
+                </div>
+
+                <div class="div-parques">
+                    <button value="Parque Terrio" name="Terrio"> Parque terrio </button>
+                    <button value="Parque cave"> Parque cave </button>
+                    <button value="Cip domestico"> Cip domestico </button>
+                    <button value="Cip internacional"> Cip Internacional</button>
+                    <button value="Taxi"> taxi</button>
+                    <button value="Autocarros"> Autocarros</button>
+                </div>
+                <p class="testo-de-escolha hidden">
+                    Escolha o parque de estacionamento para<br> gerar o seu relatorio!!!</p>
+
+                <div class="div-folha">
+                    <div class="folha">
+                        <img src="../asets/imgs/outros/iparqueslogo.png" alt="" draggable="false">
+                        <div class="rotolo-conteudo">
+                            <div class="div-rotolo-h-p">
+                                <h2>
+                                    <!-- EX : Avenças -->
+                                </h2>
+                                <p contenteditable="true"><!-- EX :Este é um resumo das avenças emitidas ao longo do
+                                    mês atual. O documento detalha todas as transações
+                                    financeiras --></p>
+                            </div>
+                            <div class="div-total-span">
+                                <p class="total"> <!-- EX : 300 --></p>
+                                <p>Total de contratos <br> ate a
+                                    data</p>
+                            </div>
+                        </div>
+                        <div class="div-diretorio-data">
+                            <p class="diretorio"><!-- EX : Relatorio geral --></p>
+                            <p class="data"> <!-- EX : 2 de Fevereiro de 2024--></p>
+                        </div>
+                        <table>
+                            <thead>
+                                <!--Cabeçalho da tabela-->
+                            </thead>
+                            <tbody>
+                                <!--O dados da lista apareceram aqui...-->
+                            </tbody>
+                            <tr class="total">
+                                <!--O total sera renderizado aqui...-->
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </article>
+        </section>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../js/exportar.js" type="module"></script>
+    <script type="module" src="../js/dataset.js" type="module"></script>
+    <script type="module" src="../js/relatorio-avencas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link da favico-->
+    <link rel="shortcut icon" href="../asets/imgs/logo/ipagest-icone.ico" type="image/x-icon">
+    <!--Link da configuracao global css -->
+    <link rel="stylesheet" href="../css/global-config.css">
+    <!--Link da configuracao dos icones -->
+    <link rel="stylesheet" href="../asets/webfonts/icones/boxicons.css">
+    <!--Link da configuracao da fonte -->
+    <link rel="stylesheet" href="../asets/webfonts/fonts/transfonter-open-sans/stylesheet.css">
+    <!--Link da  avencas-painel.css-->
+    <link rel="stylesheet" href="../css/avencas-painel.css">
+
+    <title>Avenças Painel</title>
+</head>
+
+<body>
+    <main>
+
+
+        <dialog class="modal-avencas">
+            <article>
+                <div class="div-icone">
+                    <i class="bx bx-user-check"></i>
+                    <div class="div-rolo-span">
+                        <div class="div-circulo"></div><span> </span>
+                    </div>
+                </div>
+<!--  -->
+                <div class="div-valores-perc">
+                    <p><!--  150--></p><span><!--  50%--></span>
+                </div>
+
+                <div class="div-parques">Parques</div>
+
+                <ul class="lista-parques">
+                    <hr>
+                    <li>
+                        <p>Terrio</p>
+                        <span class="terrio-valor"></span>
+                    </li>
+                    <hr>
+                    <li>
+                        <p>Parque cave</p>
+                        <span class="cave-valor"></span>
+                    </li>
+                    <hr>
+                    <li>
+                        <p>Cip domestico</p>
+                        <span class="cip-domestico-valor"></span>
+                    </li>
+                    <hr>
+                    <li>
+                        <p>Cip internacional </p>
+                        <span class="cip-internacional-valor"></span>
+                    </li>
+                    <hr>
+                    <li>
+                        <p>Taxi </p>
+                        <span class="taxi-valor"></span>
+                    </li>
+                    <hr>
+                    <li>
+                        <p>Autocarros</p>
+                        <span class="autocarros-valor"></span>
+                    </li>
+                    <hr>
+                </ul>
+            </article>
+        </dialog>
+
+        <dialog class="sair-da-conta">
+            <i class="bx-bx-alert"></i>
+            <p>Tem serteza que deseja sair da sua conta!</p>
+            <div class="div-btns">
+                <button class="sim-sair">Sim</button>
+                <button class="nao-sair">Nao</button>
+            </div>
+        </dialog>
+
+
+        <!--seccao da barra lateral-->
+        <section class="side-bar">
+            <ul class="ul-itens">
+                <li class="li-painel">
+
+                    <div class="i-rolo">
+                        <i class="bx bxs-grid" id="grid"></i> <span>Painel</span>
+                    </div>
+                </li>
+
+                <li class="li-estacionamento">
+                    <span class="li-titulo-estacionamento">Estacionamento</span>
+
+                    <div class="i-rolo">
+                        <i class="bx bx-clipboard-check"></i>
+                        <span>Gerir Avenças</span>
+                        <a href="../main/gerir-avencas.html"></a>
+                    </div>
+                </li>
+
+                <li class="li-conta">
+                    <span class="li-titulo-conta">Conta</span>
+                    <div class="i-rolo" id="btn-usuario">
+                        <i class="bx bx-user" id="icone-usuario"></i> <span class="usuario-nome"></span>
+                        <i class="bx-chevron-right "></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--seccao principal-->
+        <section class="section-main">
+            <article>
+                <div class="div-header">
+                    <img src="../asets/imgs/logo/ipagest-so-logo.svg" alt="app-logo" class="logo">
+                    <p class="titulo-conta">Avenças - Painel</p>
+                    <div class="div-notificacoes">
+                        <i class="bx-bell " id="btn-notificacoes"></i>
+                        <div class="notificacoes hide">
+                            <p>Ainda sem notificacoes!!!</p>
+                            <img src="../asets/imgs/outros/wired-outline-139-basket-hover-pinch.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="ul-cartoes">
+                    <li class="li-contratos">
+                        <div class="div-contratos">
+                            <img src="../asets/imgs/outros/file.png" alt="total-contratos">
+                            <span>
+                                Total de contratos
+                            </span>
+                        </div>
+                        <p class="total-contratos-valor"><!--  150--></p>
+                    </li>
+                    <li class="li-avencas-ativas" name="avencas-card">
+                        <div class="div-avencas-ativas">
+                            <img src="../asets/imgs/outros/user-check-_1_.svg" alt="avencas-ativas">
+                            <span>
+                                Avenças ativas
+                            </span>
+                        </div>
+
+                        <div class="div-rolo-main-avencas-ativas">
+                            <div class="rolo-avencas-ativas">
+                                <p class="total-avencas-ativas"><!--  150--></p>
+                                <span class="avencas-ativas-perc"><!--  50%--></span>
+                            </div>
+                            <img src="../asets/imgs/outros/arrow-up-right.svg" alt="" class="btn-avencas-ativas btn"
+                                id="Ativo">
+                        </div>
+                    </li>
+                    <li class="li-avencas-expiradas" name="avencas-card">
+                        <div class="div-avencas-expiradas">
+                            <img src="../asets/imgs/outros/user-x.svg" alt="avencas-expiradas">
+                            <span>
+                                Avenças expiradas
+                            </span>
+
+                        </div>
+
+                        <div class="div-rolo-main-avencas-expiradas">
+                            <div class="rolo-avencas-expiradas">
+                                <p class="total-avencas-expiradas"><!--  150--></p>
+                                <span class="avencas-expiradas-perc"><!-- 50%--></span>
+                            </div>
+                            <img src="../asets/imgs/outros/arrow-up-right.svg" alt="" class="btn-avencas-expiradas btn" id="Expirado">
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="div-banner-relatorio">
+                    <div class="banner-rolo">
+                        <img src="../asets/imgs/outros/scroll-_2_.svg" alt="">
+                        <p>
+                            Produza relatórios sobre o que você precisa
+                            de maneira fácil.
+                        </p>
+                    </div>
+                    <button>INICIAR</button>
+                </div>
+
+                <div class="div-grafico">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <script src="../js/avencas-painel.js" type="module"></script>
+    <script src="../js/database.js" type="module"></script>
+    <script src="../js/grafico.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

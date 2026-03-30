@@ -1,0 +1,153 @@
+main {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    margin-top: 18px;
+}
+
+main .upagest-logo {
+
+    user-select: none;
+    margin: auto;
+    animation-name: escalar;
+    animation-duration: 0.5s;
+    display: block;
+    opacity: 0.6;
+    width: 125px;
+    margin-bottom: 110px;
+}
+
+main .div-contas {
+    display: grid;
+
+    animation-name: escalar;
+    animation-duration: 1s;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+@keyframes escalar {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+main .div-contas article {
+    display: grid;
+    text-align: center;
+    padding: 20px 40px 0 40px;
+
+    padding-top: 60px;
+}
+
+
+main .div-contas article.gerencia {
+    border-right: 1px solid rgba(0, 0, 0, 0.195);
+}
+
+main .div-contas article.supervisao {
+    border-right: 1px solid rgba(0, 0, 0, 0.195);
+}
+
+main .div-contas article img {
+    display: block;
+    user-select: none;
+    margin: auto;
+    width: 100px;
+
+}
+
+
+main .div-contas article span {
+    user-select: none;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-bottom: 25px;
+
+}
+
+main .div-contas article button {
+    padding: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    transition: 0.45s;
+}
+
+main .div-contas article button:hover {
+    background-color: black;
+    color: rgb(125, 235, 111);
+    transition: 0.5s;
+}
+
+
+/* modal */
+dialog {
+    border-radius: 25px;
+    width: 500px;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    animation-duration: 1s;
+    animation-name: subir;
+    left: 50%;
+    box-shadow: 0 0 80px 20px rgba(0, 0, 0, 0.064);
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+@keyframes subir {
+    50% {
+        top: 45%;
+    }
+}
+
+dialog article img {
+
+    width: 70px;
+    opacity: 0.6;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+dialog article ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+dialog article ul a {
+    list-style: none;
+
+    text-decoration: none;
+    color: black;
+
+}
+
+dialog article ul li {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: rgb(231, 231, 231);
+}
+
+dialog article ul li:hover {
+    transition: 0.5s;
+    background: rgb(204, 204, 204);
+}
+
+dialog article ul li i {
+    font-size: 35px;
+}

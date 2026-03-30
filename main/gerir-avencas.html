@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link da favico-->
+    <link rel="shortcut icon" href="../asets/imgs/logo/ipagest-icone.ico" type="image/x-icon">
+    <!--Link da configuracao global css -->
+    <link rel="stylesheet" href="../css/global-config.css">
+    <!--Link da configuracao dos icones -->
+    <link rel="stylesheet" href="../asets/webfonts/icones/boxicons.css">
+    <!--Link da configuracao da fonte -->
+    <link rel="stylesheet" href="../asets/webfonts/fonts/transfonter-open-sans/stylesheet.css">
+    <!--Link da  avencas-painel.css-->
+    <link rel="stylesheet" href="../css/avencas-painel.css">
+    <link rel="stylesheet" href="../css/gerir-avencas.css">
+    <title>Gerir-Avencas</title>
+</head>
+
+<body>
+    <main>
+
+        <dialog class="sair-da-conta">
+            <i class="bx-bx-alert"></i>
+            <p>Tem serteza que deseja sair da sua conta!</p>
+            <div class="div-btns">
+                <button class="sim-sair">Sim</button>
+                <button class="nao-sair">Nao</button>
+            </div>
+        </dialog>
+
+
+        <!--seccao da barra lateral-->
+        <section class="side-bar">
+            <ul class="ul-itens">
+                <li class="li-painel">
+
+                    <div class="i-rolo">
+                        <i class="bx bxs-grid" id="grid"></i> <span>Painel</span>
+                    </div>
+                </li>
+
+                <li class="li-estacionamento">
+                    <span class="li-titulo-estacionamento">Estacionamento</span>
+
+                    <div class="i-rolo">
+                        <i class="bx bx-clipboard-check"></i>
+                        <span>Gerir Avenças</span>
+                        <a href="../main/login-avenças.html"></a>
+                    </div>
+                </li>
+
+                <li class="li-conta">
+                    <span class="li-titulo-conta">Conta</span>
+                    <div class="i-rolo" id="btn-usuario">
+                        <i class="bx bx-user" id="icone-usuario"></i> <span class="usuario-nome"></span>
+                        <i class="bx-chevron-right "></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--seccao principal-->
+        <section class="section-main">
+            <article>
+                <div class="div-header">
+                    <img src="../asets/imgs/logo/ipagest-so-logo.svg" alt="app-logo" class="logo">
+                    <p class="titulo-conta">Gerir - Avenças</p>
+                    <div class="div-notificacoes">
+                        <i class="bx-bell " id="btn-notificacoes"></i>
+                        <div class="notificacoes hide">
+                            <p>Ainda sem notificacoes!!!</p>
+                            <img src="../asets/imgs/outros/wired-outline-139-basket-hover-pinch.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <form action="#">
+                    <label for="pesquisa">
+                        <i class="bx bx-search"></i>
+
+                        <input type="text" name="pesquisa" id="pesquisa" placeholder="pesquisar..">
+                    </label>
+
+
+                </form>
+                <hr class="line-r">
+
+
+
+                <div class="div-lista">
+                    <div class="div-lista-btns-toltal">
+                        <span>Total de 300 contratos</span>
+                        <div class="btns-rolo">
+                            <select name="select" id="select">
+                                <option value="tudo">Tudo</option>
+                                <option value="Ativo">Ativos</option>
+                                <option value="Expirado">Expirados</option>
+                            </select>
+
+                            <button class="adicionar"><i class="bx bx-plus"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+
+                    <ul class="lista">
+
+
+                        <!--seccao principal-->
+                        
+                        
+
+                    </ul>
+
+                    <button class="carregar hidden"> carregar mais</button>
+
+
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="../js/database.js" type="module"></script>
+    <script src="../js/gerir-avencas.js" type="module"></script>
+</body>
+
+</html>
