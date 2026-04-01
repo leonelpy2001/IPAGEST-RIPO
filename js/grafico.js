@@ -23,7 +23,7 @@ new Chart(grafico, {
         labels: gerarMesesCorrente(mesAtual),
         datasets: [{
             label: 'Controlo mensal de avenças',
-            data: [12, 8, 16],
+            data: [12, 8, 16,10],
             borderWidth: 2.5,
             tension: 0.5,
             borderColor: 'rgb(73, 200, 92)',
