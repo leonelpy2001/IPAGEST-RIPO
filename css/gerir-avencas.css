@@ -1,6 +1,6 @@
 main section.side-bar ul li.li-painel {
 
-  opacity: 0.6;
+    opacity: 0.6;
 
 }
 
@@ -30,7 +30,7 @@ main section.side-bar ul li.li-estacionamento .i-rolo {
     cursor: pointer;
     border-radius: 12px;
     padding: 18px;
-   color: rgb(91, 208, 91);
+    color: rgb(91, 208, 91);
     opacity: 1;
     gap: 15px;
     list-style: none;
@@ -39,7 +39,7 @@ main section.side-bar ul li.li-estacionamento .i-rolo {
 }
 
 
-form {
+form.form-pesquisar {
     margin-top: 20px;
     border-radius: 22px;
     background-color: rgb(239, 239, 239);
@@ -51,7 +51,7 @@ form {
     display: none;
 }
 
-form label {
+form.form-pesquisar label {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -59,12 +59,12 @@ form label {
 
 }
 
-form label i {
+form.form-pesquisar label i {
     font-size: 22px;
 
 }
 
-form label input {
+form.form-pesquisar label input {
     font-size: 17px;
     outline: none;
     border: unset;
@@ -72,6 +72,169 @@ form label input {
     padding: 8px 5px;
     width: 100%;
 }
+
+.form-adicionar {
+    border-radius: 15px;
+    width: 700px;
+    border: none;
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.form-adicionar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-adicionar form .div-rolo-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 15px;
+
+}
+
+
+.form-adicionar form .div-rolo-form label {
+    display: grid;
+    margin: 15px 0;
+}
+
+.form-adicionar form span {
+    margin-bottom: 15px;
+}
+
+.form-adicionar form input {
+    font-size: 15px;
+    border: none;
+    padding: 18px 8px;
+    outline: none;
+    border-radius: 15px;
+    background-color: rgb(239, 239, 239);
+}
+
+
+
+
+
+
+.form-adicionar form .select {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px;
+    gap: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.form-adicionar form .select span {
+    margin-bottom: unset;
+}
+
+.form-adicionar form .select select {
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+
+.form-adicionar button {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 18px 8px;
+    border: none;
+    background-color: rgba(138, 138, 138, 0.357);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.form-adicionar button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+    color: rgb(135, 247, 135);
+}
+
+
+.modal-ver-cliente {
+
+    border-radius: 30px;
+    width: 460px;
+    border: none;
+    padding: 15px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+.modal-ver-cliente img {
+    display: block;
+    width: 100%;
+}
+
+.modal-ver-cliente .div-rolo {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    background-color: rgb(236, 236, 236);
+    padding: 15px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-ver-cliente .div-rolo .rolo-user-inform {
+    display: flex;
+    gap: 15px;
+
+    align-items: center;
+}
+
+.modal-ver-cliente .div-rolo .rolo-user-inform .nome {
+    font-weight: bolder;
+
+}
+
+.modal-ver-cliente .div-rolo .estado {
+    margin-right: 10px;
+}
+
+.modal-ver-cliente .div-rolo .rolo-user-inform span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(165, 227, 118, 0.927);
+    width: 58px;
+    height: 58px;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+.modal-ver-cliente .user-inform  {
+   opacity: 0.6;
+}
+
+.modal-ver-cliente .user-inform li {
+    padding: 8px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .line-r {
     margin-top: 22px;
@@ -210,7 +373,7 @@ form label input {
 
 .div-lista .lista li {
 
-    background-color: rgb(236, 236, 236);
+    background-color: rgba(236, 236, 236, 0.88);
     padding: 15px;
     border-radius: 50px;
 }
@@ -219,9 +382,17 @@ form label input {
 .div-lista .lista li .rolo-informacao-usuario span {
     font-size: 28px;
     font-weight: bolder;
-    background-color: rgb(116, 204, 100);
-    padding: 15px 25px;
+    background-color: rgb(149, 222, 136);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+}
+
+.div-lista .lista li .rolo-informacao-usuario p.estado {
+    width: 125px;
 }
 
 .div-lista .lista li .div-acoes {
@@ -258,4 +429,11 @@ form label input {
     border: 0;
     background-color: transparent;
     cursor: pointer;
+}
+
+p.texto-oculto{
+    opacity: 0.4;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
 }

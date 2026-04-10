@@ -21,7 +21,7 @@
 
 <body>
     <main>
-
+        <!--Modal sair da conta-->
         <dialog class="sair-da-conta">
             <i class="bx-bx-alert"></i>
             <p>Tem serteza que deseja sair da sua conta!</p>
@@ -29,6 +29,140 @@
                 <button class="sim-sair">Sim</button>
                 <button class="nao-sair">Nao</button>
             </div>
+        </dialog>
+
+
+        <!--Modal ver usuario-->
+        <dialog class="modal-ver-cliente">
+            <img src="../asets/imgs/outros/AVENCA CARD.png" alt="CARD">
+
+            <div class="div-rolo">
+                <div class="rolo-user-inform">
+                    <span class="inicial">L</span>
+                    <p class="nome">Fenando </p>
+                </div>
+
+                <p class="estado">Estado: <strong>Ativo</strong></p>
+            </div>
+
+            <ul class="user-inform">
+                <li>
+                    <span>Empresa:</span>
+                    <span class="empresa">AGT</span>
+                </li>
+                <hr>
+                <li>
+                    <span>Morada:</span>
+                    <span class="morada">KIlamba</span>
+                </li>
+                <hr>
+                <li>
+                    <span>Telemovel:</span>
+                    <span class="telefone">123456789</span>
+                </li>
+                <hr>
+                <li>
+                    <span>Matricula:</span>
+                    <span class="matricula">LD-12-21-DD</span>
+                </li>
+                <hr>
+                <li>
+                    <span>Email:</span>
+                    <span class="email">user@gmail.com</span>
+                </li>
+                <hr>
+                <li>
+                    <span>Parque:</span>
+                    <span class="parque">Parque Terrio </span>
+                </li>
+                <hr>
+                <li>
+                    <span>Data de inicio:</span>
+                    <span class="data-incio">07/05/2026</span>
+                </li>
+                <hr>
+                <li>
+                    <span>Data do fim:</span>
+                    <span class="data-fim">07/06/2026</span>
+                </li>
+            </ul>
+
+        </dialog>
+
+        <!--Modal adicionar clientes-->
+        <dialog class="form-adicionar">
+            <form action="#">
+                <h2>
+                    Adicionar Clientes
+                </h2>
+                <div class="div-rolo-form">
+                    <label for="cliente-nome">
+                        <span>Cliente:</span>
+                        <input type="text" name="cliente-nome" id="cliente-nome" placeholder="Nome do cliente:">
+                    </label>
+
+                    <label for="empresa">
+                        <span>Empresa:</span>
+                        <input type="text" name="empresa" id="empresa" placeholder="Nome da impresa:">
+                    </label>
+                </div>
+
+
+                <div class="div-rolo-form">
+                    <label for="morada">
+                        <span>Morada:
+                        </span>
+                        <input type="text" name="morada" id="morada" placeholder="Morada do  cliente:">
+                    </label>
+
+                    <label for="telefone">
+                        <span>Telefone:</span>
+                        <input type="number" name="telefone" id="telefone" placeholder="Telefone:">
+                    </label>
+                </div>
+
+
+                <div class="div-rolo-form">
+
+                    <label for="email" class="email">
+                        <span>Email:</span>
+                        <input type="email" name="email" id="email" placeholder="Email do cliente:">
+                    </label>
+
+                    <label for="matricula">
+                        <span>Matricula:</span>
+                        <input type="text" name="matricula" id="matricula" placeholder="Matricula do cliente:">
+                    </label>
+                </div>
+
+
+                <div class="div-rolo-form">
+
+                    <label for="data-inicio">
+                        <span>Data inicio:
+                        </span>
+                        <input type="date" name="data-inicio" id="data-inicio" class="data-inicio">
+                    </label>
+
+                    <label for="data-fim">
+                        <span>Data fim:</span>
+                        <input type="date" name="data-fim" id="data-fim">
+                    </label>
+                </div>
+
+                <label for="select" class="select">
+                    <span>Parques:</span>
+                    <select name="section" id="select">
+                        <option value="Parque Terrio">Parque Terrio</option>
+                        <option value="Parque cave">Parque cave</option>
+                        <option value="Cip domestico">Cip domestico</option>
+                        <option value="Cip internacional">Cip internacional</option>
+                        <option value="Taxi">Taxi</option>
+                        <option value="Autocarros">Autocarros</option>
+                    </select>
+                </label>
+                <button type="submit">Adicionar</button>
+            </form>
         </dialog>
 
 
@@ -71,14 +205,14 @@
                     <div class="div-notificacoes">
                         <i class="bx-bell " id="btn-notificacoes"></i>
                         <div class="notificacoes hide">
-                            <p>Ainda sem notificacoes!!!</p>
+                            <p>Ainda sem notificações!!!</p>
                             <img src="../asets/imgs/outros/wired-outline-139-basket-hover-pinch.gif" alt="">
                         </div>
                     </div>
                 </div>
 
 
-                <form action="#">
+                <form class="form-pesquisar" action="#">
                     <label for="pesquisa">
                         <i class="bx bx-search"></i>
 
@@ -95,7 +229,7 @@
                     <div class="div-lista-btns-toltal">
                         <span>Total de 300 contratos</span>
                         <div class="btns-rolo">
-                            <select name="select" id="select">
+                            <select name="select" id="select" class="lista-estados">
                                 <option value="tudo">Tudo</option>
                                 <option value="Ativo">Ativos</option>
                                 <option value="Expirado">Expirados</option>
@@ -111,8 +245,8 @@
 
 
                         <!--seccao principal-->
-                        
-                        
+
+
 
                     </ul>
 
