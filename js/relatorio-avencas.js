@@ -44,7 +44,7 @@ let todosClientes = JSON.parse(localStorage.getItem("clientes")) || []
 
 
 btnGerirAvencas.addEventListener("click", function () {
-    window.location.href = "../main/avencas-painel.html"
+    window.location.href = "../main/gerir-avencas.html"
 })
 
 //gerar clientes com estados do banco
