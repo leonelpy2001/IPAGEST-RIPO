@@ -4,6 +4,7 @@ let btnUsuario = document.querySelector("#btn-usuario")
 let btnNaoSair = document.querySelector(".nao-sair")
 let btnSimSair = document.querySelector(".sim-sair")
 let btnRelatorio = document.querySelector(".div-banner-relatorio button")
+let btnGerirAvencas = document.querySelector("#gerir-avenca")
 let btnEstados = document.querySelectorAll(".rolo-btns button")
 let btnPainel = document.querySelector(".i-rolo")
 let btnsParques = document.querySelectorAll(".div-parques button")
@@ -42,6 +43,10 @@ let store = JSON.parse(localStorage.getItem("usuarios")) || []
 let todosClientes = JSON.parse(localStorage.getItem("clientes")) || []
 
 
+btnGerirAvencas.addEventListener("click", function () {
+    window.location.href = "../main/avencas-painel.html"
+})
+
 //gerar clientes com estados do banco
 let clientesComEstado = todosClientes.map(cliente => {
     let hoje = new Date()
@@ -68,7 +73,6 @@ let clientesComEstado = todosClientes.map(cliente => {
 
 
 
-console.log(clientesComEstado);
 
 
 const mostrarNomeDeUsuario = function (usuario) {

@@ -107,7 +107,7 @@ dialog {
     }
 }
 
-dialog article img {
+dialog article img.circles {
 
     width: 70px;
     opacity: 0.6;
@@ -148,6 +148,6 @@ dialog article ul li:hover {
     background: rgb(204, 204, 204);
 }
 
-dialog article ul li i {
-    font-size: 35px;
+dialog article ul li img {
+  width: 40px;
 }

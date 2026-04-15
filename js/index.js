@@ -1,7 +1,7 @@
 //Pegar elementos via DOM
 let btnAtividades = document.querySelector(".atividades")
 let modal = document.querySelector("dialog")
-
+let btnSupervisao = document.querySelector(".supervisao")
 console.log(btnAtividades);
 
 
@@ -19,4 +19,9 @@ modal.addEventListener("click", (evento) => {
     if (evento.target === modal) {
         modal.close()
     }
+})
+
+// direcionar ao login da supervisao ti
+btnSupervisao.addEventListener("click", function () {
+    window.location.href = "./main/supervisao-ti-login.html" 
 })

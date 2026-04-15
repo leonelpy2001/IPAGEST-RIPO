@@ -1,0 +1,250 @@
+.div-lista {
+    margin-top: 40px;
+    border-left: 1px solid rgba(0, 0, 0, 0.209);
+    padding-left: 20px;
+
+}
+
+
+.div-lista .div-lista-btns-toltal {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.div-lista .div-lista-btns-toltal .btns-rolo {
+
+    display: flex;
+    gap: 15px;
+
+    justify-content: space-between;
+
+}
+
+.div-lista .div-lista-btns-toltal .btns-rolo button {
+    font-size: 15px;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    gap: 15px;
+    color: rgb(86, 255, 86);
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+
+}
+
+
+
+
+.div-lista .div-lista-btns-toltal .btns-rolo select {
+    cursor: pointer;
+    font-size: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.196);
+    width: 150px;
+    outline: none;
+    appearance: none;
+    padding: 10px;
+    background: url('../asets/imgs/outros/bx-chevron-down.svg') no-repeat right 10px center;
+    background-size: 25px;
+
+}
+
+.div-lista .div-lista-btns-toltal .btns-rolo select option {
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+.div-lista .div-lista-btns-toltal .btns-rolo button i {
+    font-size: 22px;
+
+}
+
+
+.div-lista .lista {
+    font-size: 15px;
+    margin-top: 40px;
+    gap: 15px;
+    display: grid;
+
+}
+
+.div-lista .lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.div-lista .lista li .rolo-informacao-usuario {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.div-lista .lista li .rolo-informacao-usuario .nome {
+
+    width: 110px;
+}
+
+.div-lista .lista li {
+
+    background-color: rgba(236, 236, 236, 0.88);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+
+.div-lista .lista li .rolo-informacao-usuario span {
+    font-size: 28px;
+    font-weight: bolder;
+    background-color: rgb(149, 222, 136);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.div-lista .lista li .rolo-informacao-usuario p.estado {
+
+    width: 125px;
+}
+
+.div-lista .lista li .div-acoes {
+    margin-right: 15px;
+    opacity: 0.6;
+    gap: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.div-lista .lista li .div-acoes i {
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.div-lista .lista li .div-acoes img {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+
+}
+
+
+.div-lista button.carregar {
+    width: 100%;
+
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 16px;
+    color: rgb(81, 81, 206);
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+p.texto-oculto {
+    opacity: 0.4;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.modal-cadastro-menbros-avencas {
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 15px;
+    padding: 20px;
+    position: fixed;
+    width: 430px;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+.modal-cadastro-menbros-avencas h2 {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+
+.modal-cadastro-menbros-avencas form {
+    display: grid;
+
+}
+
+.modal-cadastro-menbros-avencas form label {
+    display: grid;
+    margin-bottom: 15px;
+
+}
+
+.modal-cadastro-menbros-avencas form label span {
+    display: grid;
+    margin-bottom: 15px;
+
+}
+
+
+
+.modal-cadastro-menbros-avencas form label input {
+    outline: none;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    padding: 18px 15px;
+
+}
+
+.modal-cadastro-menbros-avencas form button {
+    border-radius: 15px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    padding: 18px;
+    color: rgb(135, 247, 135);
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.modal-cadastro-menbros-avencas form button:hover {
+    transition: 0.5s;
+    outline: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    color: black;
+
+    background-color: transparent;
+    border-radius: 15px;
+}

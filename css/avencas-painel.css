@@ -1,9 +1,10 @@
 /* Elemento principal */
 body{
-    height: 100vh;
+    height: 100%;
 }
 
 main {
+     height: 100vh;
     display: grid;
 
     grid-template-columns: 320px 1fr;

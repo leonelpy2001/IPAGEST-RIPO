@@ -6,6 +6,7 @@ let contador = document.querySelector(".div-lista-btns-toltal span")
 let btnAdicionar = document.querySelector(".div-lista button")
 let btnCarregar = document.querySelector("button.carregar")
 let btnPainel = document.querySelector(".i-rolo")
+let btnGerirAvencas = document.querySelector("#gerir-avenca")
 let btnUsuario = document.querySelector("#btn-usuario")
 let btnNaoSair = document.querySelector(".nao-sair")
 let btnSimSair = document.querySelector(".sim-sair")
@@ -64,7 +65,10 @@ btnPainel.addEventListener("click", function () {
     window.location.href = "../main/avencas-painel.html"
 })
 
-
+//
+btnGerirAvencas.addEventListener("click", function () {
+    window.location.href = "../main/avencas-painel.html"
+})
 
 const desaBilitarBtn = function () {
 

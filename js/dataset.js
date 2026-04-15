@@ -1,17 +1,19 @@
 
 
 
-let user = [
+let usuariosAvencas = [
 
     {
         id: Date.now(),
-        nome: "abelardesneto",
+        nome: "Abelardesneto",
+        email: "abelardesneto11@gmail.com",
         senha: "123456"
     }
     ,
     {
         id: Date.now(),
-        nome: "antonio",
+        nome: "Antoniopedro",
+        email: "antonio125@gmail.com",
         senha: "123456"
     }
 
@@ -27,11 +29,12 @@ let clientes = data.clientes
 
 
 localStorage.setItem("clientes", JSON.stringify(clientes))
-localStorage.setItem("usuarios", JSON.stringify(user))
+localStorage.setItem("usuarios", JSON.stringify(usuariosAvencas))
 
 
 
 let todosClientes = JSON.parse(localStorage.getItem("clientes")) || []
+let menbrosAvencas = JSON.parse(localStorage.getItem("usuarios")) || []
 
 //gerar clientes com estados do banco
 let clientesComEstado = todosClientes.map(cliente => {
@@ -58,5 +61,6 @@ let clientesComEstado = todosClientes.map(cliente => {
 })
 
 export { clientesComEstado }
+export { menbrosAvencas }
 
 
