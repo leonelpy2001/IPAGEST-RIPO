@@ -65,10 +65,7 @@ btnPainel.addEventListener("click", function () {
     window.location.href = "../main/avencas-painel.html"
 })
 
-//
-btnGerirAvencas.addEventListener("click", function () {
-    window.location.href = "../main/avencas-painel.html"
-})
+
 
 const desaBilitarBtn = function () {
 
