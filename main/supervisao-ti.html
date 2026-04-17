@@ -17,19 +17,23 @@
     <link rel="stylesheet" href="../css/supervisao-ti.css">
 
 
-    <title>Document</title>
+    <title>Supervisao TI painel</title>
 </head>
 
 <body>
     <main>
-
+        <dialog class="modal-eviar-email">
+            <p>Email de confiramcao enviado para <strong>leonildobig27@gmail.com</strong> </p>
+        </dialog>
 
         <dialog class="modal-cadastro-menbros-avencas">
             <h2>Adicionar Membro</h2>
-            <form action="">
+            <form action="" class="enviar-email-form">
                 <label for="user-nome-completo">
                     <span>Nome do usuario </span>
-                    <input type="text" name="user-nome-completo" id="user-nome-completo" placeholder=" Nome completo...">
+                    <input type="text" name="user-nome-completo" id="user-nome-completo"
+                        placeholder=" Nome completo...">
+                    <span class="alert" id="alert-nome"></span>
                 </label>
 
 
@@ -37,9 +41,10 @@
                 <label for="user-email">
                     <span>Email do usuario </span>
                     <input type="email" name="user-email" id="user-email" placeholder=" Email do usuario...">
+                    <span class="alert" id="alert-email"></span>
                 </label>
 
-                <button type="submit">Enviar </button>
+                <button type="submit" name="submit">Enviar </button>
             </form>
         </dialog>
 

@@ -3,7 +3,7 @@
 let lista = document.querySelector("ul.lista")
 let contador = document.querySelector(".div-lista-btns-toltal span")
 let btnAdicionar = document.querySelector(".div-lista button")
-
+let btnEnviarForm = document.querySelector("form button")
 let btnUsuario = document.querySelector("#btn-usuario")
 let btnNaoSair = document.querySelector(".nao-sair")
 let btnSimSair = document.querySelector(".sim-sair")
@@ -16,15 +16,52 @@ let btnNotificacoes = document.querySelector("#btn-notificacoes")
 let cardNoticicaoes = document.querySelector(".notificacoes")
 let usuarioNome = document.querySelector(".usuario-nome")
 
+let modalEmailEnviado = document.querySelector(".modal-eviar-email")
+let emailText = document.querySelector(".modal-eviar-email p strong")
 let modalAvencas = document.querySelector(".modal-cadastro-menbros-avencas")
 let tituloformAvenca = document.querySelector(".modal-cadastro-menbros-avencas h2")
 
+let formEnviarEmail = document.querySelector(".enviar-email-form")
 
 let inputNome = document.querySelector("#user-nome-completo")
 let inputEmail = document.querySelector("#user-email")
 
+let alertaNome = document.querySelector("#alert-nome")
+let alertaEmail = document.querySelector("#alert-email")
+
 import { menbrosAvencas } from "./dataset.js"
 
+
+
+//modal de valicao do modal avenca
+const confirmarEnvioEmail = function (email) {
+
+
+
+    if (!email.includes("@")) {
+        alertaEmail.textContent = "Ensira um email valido"
+        return
+    } else {
+        modalEmailEnviado.show()
+        emailText.textContent = email
+        modalAvencas.close()
+
+
+        btnAdicionar.style.backgroundColor = "rgb(27, 27, 27)"
+
+        btnAdicionar.style.color = "rgb(86, 255, 86)"
+        setTimeout(function (params) {
+            modalEmailEnviado.close()
+
+
+        }, 5000)
+    }
+
+
+
+
+
+}
 
 
 
@@ -33,7 +70,6 @@ import { menbrosAvencas } from "./dataset.js"
 const mostrarNomeDeUsuario = function (usuario) {
     usuarioNome.textContent = usuario
 }
-
 mostrarNomeDeUsuario("antoniopedro")
 
 //abrir e fechar notificacoes
@@ -51,7 +87,7 @@ btnUsuario.addEventListener("click", function (evento) {
     modalSair.showModal()
     iconeUsuario.setAttribute("class", "bx bxs-user")
     btnSimSair.addEventListener("click", function () {
-        window.location.href = "../main/login-avenças.html"
+        window.location.href = "../main/supervisao-ti-login.html"
 
     })
 
@@ -63,7 +99,17 @@ btnNaoSair.addEventListener("click", function (evento) {
 
 })
 
+
+
+
+
 const chamarFormulario = function () {
+
+    formEnviarEmail.addEventListener("submit", function (evento) {
+        evento.preventDefault()
+
+
+    })
 
     //mostra formulario para adicionar clientes    
     modalAvencas.showModal()
@@ -77,8 +123,6 @@ const chamarFormulario = function () {
         const elemento = evento.target
 
 
-
-
         if (elemento === modalAvencas) {
             modalAvencas.close()
 
@@ -88,6 +132,7 @@ const chamarFormulario = function () {
 
         }
     })
+
 
 }
 
@@ -101,6 +146,15 @@ btnAdicionar.addEventListener("click", function (evento) {
 
 })
 
+btnEnviarForm.addEventListener("click", function () {
+
+    let valorEmail = inputEmail.value.trim()
+
+    confirmarEnvioEmail(valorEmail)
+
+
+
+})
 
 
 
